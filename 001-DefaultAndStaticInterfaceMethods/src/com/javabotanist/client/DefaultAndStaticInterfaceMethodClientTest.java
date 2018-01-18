@@ -40,6 +40,11 @@ public class DefaultAndStaticInterfaceMethodClientTest {
 		Integer maxNum = myInterface.getMaxNum(intList);
 		System.out.println("Maximum integer in the list is "+maxNum);
 		
+		System.out.println("---------------------");
+		
+		MyClass myClass = new MyClass();
+		myClass.display();
+		
 	}
 
 }

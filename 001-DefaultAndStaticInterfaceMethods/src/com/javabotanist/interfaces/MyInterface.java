@@ -35,6 +35,10 @@ public interface MyInterface {
 		Collections.sort(studentList);
 		return studentList;
 	}
+	
+	default public void display() {
+		System.out.println("MyInterface.display()");
+	}
 
 	// Implementation class cannot override static method.
 	static public void greet(String name) {
