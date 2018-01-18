@@ -20,6 +20,14 @@ public interface MyInterface {
 	 *    c. Since any class that is implementing an interface already, has Object as superclass, if we have equals(), hashCode() default 
 	 *    	 methods in interface, it will become irrelevant. That's why for better clarity, interfaces are not allowed to have Object class
 	 *       default methods.
+	 *       
+	 * 5. Interface default methods helps in extending interfaces without having the fear of breaking implementation classes.
+	 * 6. Normally, static methods can be used as helper methods while default methods are used as a default implementation for classes that 
+	 * 	  implements that interface.
+	 * 7. Default methods can be overridden while static methods cannot be overridden. However, both implementation class and interface can have 
+	 * 	  static methods with same names, by neither overriding each other.
+	 * 8. In case a class is implementing more than one interfaces with same default method signature then the implementing class needs to 
+	 * 	  override the default method.
 	 */
 	
 	// Implementation class can override this method.
