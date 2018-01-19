@@ -28,15 +28,15 @@ public class StreamFilteringAndMatchingClientTest {
 		
 		System.out.println("------------------------------");
 		
-		// return true if all elements of this stream match the provided predicate
+		// returns true if all elements of this stream match the provided predicate
 		boolean allMatch = list.stream().allMatch(s -> s.getName().contains("D"));
 		System.out.println("allMatch returns " + allMatch);
 		
-		// return true if any elements of this stream match the provided predicate
+		// returns true if any elements of this stream match the provided predicate
 		boolean anyMatch = list.stream().anyMatch(s -> s.getAge() > 35);
 		System.out.println("anyMatch returns " + anyMatch);
 		
-		// return true if no elements of this stream match the provided predicate
+		// returns true if no elements of this stream match the provided predicate
 		boolean noneMatch = list.stream().noneMatch(s -> s.getAge() > 65);
 		System.out.println("noneMatch returns " + noneMatch);
 	}
